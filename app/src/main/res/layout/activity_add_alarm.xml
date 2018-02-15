@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ideabinbd.alarm.AddAlarm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_alarm_name"
+            android:hint="Alarm Name"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/text_hint_medtime"
+            android:layout_below="@id/input_alarm_name"
+            android:text="Set Alarm Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/al_ad_rg_group"
+            android:layout_below="@+id/text_hint_medtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everyday"
+            android:id="@+id/input_alarm_type_evd"
+
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Time"
+            android:id="@+id/input_alarm_type_ot"
+            android:layout_below="@+id/input_alarm_type_evd"
+            android:checked="false" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_below="@id/al_ad_rg_group"
+            android:id="@+id/input_set_time"
+            android:text="Click to set time"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_alarm_save"
+            android:layout_below="@id/input_set_time"
+            android:text="SAVE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>
